@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    overflow: hidden;
+    width: 500px;
+    /* Increased width for larger size */
+}
+
+.display {
+    background-color: #222;
+    color: white;
+    font-size: 3rem;
+    /* Increased font size for larger display */
+    padding: 20px;
+    /* Increased padding for larger display */
+    text-align: right;
+    border-bottom: 2px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.button {
+    flex: 1;
+    height: 120px;
+    /* Increased height for larger buttons */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.button.clear {
+    background-color: #f44336;
+    color: white;
+    font-size: 2rem;
+    /* Increased font size for special buttons */
+}
+
+.button.equal {
+    background-color: #4caf50;
+    color: white;
+    font-size: 2rem;
+    /* Increased font size for special buttons */
+}
+
+.button[data-operator] {
+    background-color: #ff9800;
+    color: white;
+    font-size: 2rem;
+    /* Increased font size for operator buttons */
+}
